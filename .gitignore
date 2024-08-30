@@ -1,16 +1,9 @@
 HELP.md
-# Ignore all files in target/
-target/
-# But include the target/classes/ directory
-!target/classes/
-# Exclude specific subdirectories in target/
-!target/classes/**
+#target/
+#!.mvn/wrapper/maven-wrapper.jar
+#!**/src/main/**/target/
+#!**/src/test/**/target/
 
-# Ignore Maven wrapper jar
-!.mvn/wrapper/maven-wrapper.jar
-# Ignore other build-related directories
-!**/src/main/**/target/
-!**/src/test/**/target/
 ### STS ###
 .apt_generated
 .classpath
